@@ -15,8 +15,13 @@ All working instructions are owed credit to the following sources; any mistakes 
 - [Raspi Bolt](https://github.com/Stadicus/guides/blob/master/raspibolt/raspibolt_64_electrum.md) project
 
 ## Disclaimer
+EPS is not officially supported by Bitseed. Use this guide at your own risk. We will not provide support if anything goes wrong.
 
-These instructions work as of the date of the last commit made to this document. If you try to follow the instructions and they do not work, please [create an issue](https://github.com/bitseed-org/bitseed/issues), and if you discover a fix, please [submit a pull request](https://github.com/bitseed-org/bitseed/pulls) that fixes the issue.
+This guide involves using the Linux command line to install and run EPS. Users are expected to have basic familiarity with the Linux command line. Beginners are welcome but may get stuck in some places if they do not have the knowledge to self-correct and undo errors.
+
+If you run into any issues you can join the [Bitseed community chatroom](https://riot.im/app/#/room/#bitseed:matrix.org) on Matrix or join the #electrum channel on [Freenode IRC](https://webchat.freenode.net/) to ask for help from the open source community.
+
+The instructions in this guide work as of the date of the last commit made to this document. If you try to follow the instructions and they do not work, please [create an issue](https://github.com/bitseed-org/bitseed/issues), and if you discover a fix, please [submit a pull request](https://github.com/bitseed-org/bitseed/pulls) that fixes the issue.
 
 ## Getting started
 
