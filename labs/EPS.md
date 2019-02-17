@@ -138,4 +138,4 @@ Start Electrum with this command to ensure the wallet only connects to your Elec
 
 `electrum --oneserver --server bitseed.ip.address:50002:s`
 
-Electrum should start and connect to your node. The connection light will turn from green to red, and the wallet will fill up with the transaction history and addresses. You can now use your Electrum wallet privately.
+Electrum should start and connect to your node. The connection light will turn from red to green, and the wallet will fill up with the transaction history and addresses after it is done syncing (syncing may take a minute or two). Once the wallet is done syncing, you can now use your Electrum wallet privately with your own Electrum Personal Server running on your Bitseed node.
