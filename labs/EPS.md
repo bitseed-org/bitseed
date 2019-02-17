@@ -29,9 +29,11 @@ SSH into your node, replacing `bitseed.ip.address` with your Bitseed's local IP 
 
 `ssh bitcoin@bitseed.ip.address`
 
+Type the password printed on your Bitseed documentation and hit `Enter`.
+
 ### Install Python3
 
-`sudo apt-get install python3-setuptools python3-pyqt5 python3-pip`
+`sudo apt-get install python3-setuptools python3-pyqt5 python3-pip -y`
 
 Type the password printed on your Bitseed documentation and hit `Enter`.
 
