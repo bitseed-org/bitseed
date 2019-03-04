@@ -61,7 +61,7 @@ Add the Tor package repo to your apt sources.
 
 Scroll to the bottom of the file and paste these lines:
 
-> deb https://deb.torproject.org/torproject.org xenial main
+> deb https://deb.torproject.org/torproject.org xenial main  
 > deb-src https://deb.torproject.org/torproject.org xenial main
 
 
@@ -97,16 +97,16 @@ Edit the Tor configuration file.
 
 Press and hold `CTRL+K` to delete the existing content until the file is blank then copy+paste the following into the file:
 
-> ClientOnly 1
-> SOCKSPort 9050
-> SOCKSPolicy accept 127.0.0.1/8
-> Log notice file /var/log/tor/notices.log
-> ControlPort 9051
-> HiddenServiceStatistics 0
-> ORPort 9001
-> LongLivedPorts 21,22,706,1863,5050,5190,5222,5223,6523,6667,6697,8300,8233
-> ExitPolicy reject *:*
-> DisableDebuggerAttachment 0
+> ClientOnly 1  
+> SOCKSPort 9050  
+> SOCKSPolicy accept 127.0.0.1/8  
+> Log notice file /var/log/tor/notices.log  
+> ControlPort 9051  
+> HiddenServiceStatistics 0  
+> ORPort 9001  
+> LongLivedPorts 21,22,706,1863,5050,5190,5222,5223,6523,6667,6697,8300,8233  
+> ExitPolicy reject *:*  
+> DisableDebuggerAttachment 0  
 
 Press `CTRL+X` then `Y` then `Enter` to save and exit.
 
@@ -138,7 +138,7 @@ The final output of the command above should be `ff54aafedff961eb94792487e827515
 
 Scroll to the bottom of the file and paste these lines:
 
-> export GOPATH=$HOME/go
+> export GOPATH=$HOME/go  
 > export PATH=$PATH:$GOPATH/bin
 
 Press `ctrl+x`, `y`, and `enter` to save and exit.
@@ -163,20 +163,20 @@ Note the bitcoin rpc user and password saved in this file. You will need these l
 
 Scroll to the bottom of the file and paste these lines if your bitcoin configuration file doesn't already have them:
 
-> txindex=1
-> server=1
-> rpcport=8332
-> upnp=1
-> daemon=1
-> listen=1
-> listenonion=1
-> onlynet=onion
-> proxy=127.0.0.1:9050
-> bind=127.0.0.1
-> rpcallowip=192.168.1.92
-> rpcallowip=127.0.0.1
-> zmqpubrawblock=tcp://127.0.0.1:28332
-> zmqpubrawtx=tcp://127.0.0.1:28333
+> txindex=1  
+> server=1  
+> rpcport=8332  
+> upnp=1  
+> daemon=1  
+> listen=1  
+> listenonion=1  
+> onlynet=onion  
+> proxy=127.0.0.1:9050  
+> bind=127.0.0.1  
+> rpcallowip=192.168.1.92  
+> rpcallowip=127.0.0.1  
+> zmqpubrawblock=tcp://127.0.0.1:28332  
+> zmqpubrawtx=tcp://127.0.0.1:28333  
 
 Press `ctrl+x`, `y`, and `enter` to save and exit.
 
@@ -188,20 +188,20 @@ Press `ctrl+x`, `y`, and `enter` to save and exit.
 
 Press and hold `CTRL+K` to delete the existing content (if any) until the file is blank then copy+paste the following into the file:
 
-> [Application Options]
-> debuglevel=trace
-> maxpendingchannels=100
-> 
-> [Bitcoin]
-> bitcoin.active=1
-> bitcoin.node=bitcoind
-> bitcoin.mainnet=1
->
-> [Bitcoind]
-> bitcoind.rpcuser=REPLACE
-> bitcoind.rpcpass=REPLACE
-> bitcoind.zmqpubrawblock=tcp://127.0.0.1:28332
-> bitcoind.zmqpubrawtx=tcp://127.0.0.1:28333
+> [Application Options]  
+> debuglevel=trace  
+> maxpendingchannels=100  
+>   
+> [Bitcoin]  
+> bitcoin.active=1  
+> bitcoin.node=bitcoind  
+> bitcoin.mainnet=1  
+>  
+> [Bitcoind]  
+> bitcoind.rpcuser=REPLACE  
+> bitcoind.rpcpass=REPLACE  
+> bitcoind.zmqpubrawblock=tcp://127.0.0.1:28332  
+> bitcoind.zmqpubrawtx=tcp://127.0.0.1:28333  
 
 Replace "REPLACE" with the bitcoind rpc user and password found in the bitcoin.conf file from the previous section.
 
