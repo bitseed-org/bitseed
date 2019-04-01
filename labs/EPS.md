@@ -152,6 +152,7 @@ Electrum should start and connect to your node. The connection light will turn f
 ### Appendix I. Use EPS with Ledger wallet
 
 **If you already have used accounts in your Ledger wallet**
+
 If there are already accounts in your Ledger wallet that you have used with the Ledger app, then these wallets can be treated as "compromised" - or at least "associated" - from a privacy perspective. The Ledger company already knows these wallets are tied to the same user. You have two choices regarding what to do with these accounts:
 
 1. Run the coins in them through a mix network like that offered by JoinMarket or Wasabi Wallet, then transfer the resulting coins back to a fresh Ledger account (described below), or
@@ -178,6 +179,7 @@ After you create your wallet in Electrum, you'll notice that nothing happens. Th
 ### Appendix II. Use EPS with Electrum wallet
 
 **If you already have used accounts in your Electrum wallet**
+
 If there are already accounts in your Electrum wallet that you have used with default Electrum settings, then these wallets can be treated as "compromised" - or at least "associated" - from a privacy perspective, even if you've only ever connected the wallet over Tor. The Electrum servers you have connected to already know these wallets are tied to the same user. You have two choices regarding what to do with these accounts:
 
 1. Run the coins in them through a mix network like that offered by JoinMarket or Wasabi Wallet, then transfer the resulting coins back to a fresh Electrum wallet (described below), or
